@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Le guide HTML/CSS pour Débutants</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>   
+    <div class="logo">
+        <img src="images/logo-site-removebg-preview.png"alt="logo en losange rouge">
+    </div>
+    <nav>
+        <a href="#">Introduction</a>
+        <a href="#">Tips</a>
+        <a href="#">Contact</a>
+    </nav>
+    </header> 
+
+    <section class="intro">
+    <h1>Codez des sites web modernes avec Html et Css.</h1> 
+    <p>Graçe au language Html et Css vous pouvez structurer et créer des sites web de cero.</p>
+    </section>
+    <section class="raisons">
+        <div class="raisons-text">
+        <h2>Pour quoi apprendre HTML/CSS?</h2> 
+        <p>Si vous vous demandez les raisons pour lesquelles il faut apprendre à coder en Html/Css, voilà pour quoi:</p>
+         <ul>
+            <li>Meilleure structure de votre site web avec html.</li>
+            <li>Creativité infinite avec css et ses créations d'animations.</li>
+            <li>On peut construire des sites web simples avec des balises de base, puis progresser vers des projets plus complexes.</li>
+            <li>Compatibilité avec d'autres tecnologies.</li>
+        </ul>
+    </div>
+        <div class="raisons-img">
+        <img src="images/HTML-1.jpg"alt="image-html-css">
+        </div>
+       
+    </section>
+    <section class="titres">
+        <div class="titres-grid">
+            <div class="titre1">
+        
+        <img src="images/numerique-et-planete.jpg"alt="photo planete">
+        <h2>Les balises de base.</h2>
+        <p>Les balises autour du contenu permettent de transformer une image ou un texte pour obtenir un lien vers une autre page, créer des titres,etc.
+        <ol>
+            <li>La balise "h1" réconnez la hiérarchie des titres. Example:
+                <pre><code>&lt;h1&gt;Mon titre&lt;/h1&gt;</code></pre>
+                <pre><code>&lt;h2&gt;Mon sous-titre&lt;/h2&gt;</code></pre>
+            </li>
+            <li>La balise "p" ajoute un paragraphe. Example:
+                <pre><code>&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;</code></pre>
+            </li>
+            <li>La balise "ul" liste des élements sans aucun ordre. Example:
+                <pre><code>&lt;ul&gt;Liste de courses:
+                <pre><code>&lt;li&gt;Tomates&lt;/li&gt;</code></pre>
+                <pre><code>&lt;li&gt;Mozzarella&lt;/li&gt;</code></pre>
+                <pre><code>&lt;li&gt;Basilic&lt;/li&gt;</code></pre>
+                <pre><code>&lt;/ul&gt;</code></pre>  
+            </li>
+            
+        </ol>
+        </p>
+    </div>
+    <div class="titre2">
+    <img src="images/numerique-et-planete.jpg"alt="favicons">
+    <h2>Tips et bonnes pratiques</h2>
+    <p>Un codage CSS bien structuré est cruciale pour la maintenabilité et la lisibilité du code, voilà quelques conseils: </p>
+    <ol>
+        <li>Organiser les styles par sections logiques</li> 
+        <li>Utiliser des commentaires pour expliquer les blocs de code</li>
+        <li>Regrouper les propriétés similaires.</li>
+    </ol>
+    
+    
+</div>
+</div>
+</section>
+    <section class="formulaire">
+       
+        <form><h2>Contact</h2>
+      <fieldset>
+         
+        <legend>Vous avez des questions?</legend>
+        <div class="espace">
+  <div class="label">
+  <label for="prenom">Prénom:</label>
+  <input type="text" id="prenom" name="prenom"></div>
+
+  <div class="label">
+  <label for="email">Mail:</label>
+  <input type="email" id="email" pattern=".+@example\.com" size="30" required placeholder="...@..." >
+  </div>
+<div class="label">
+  <label for="newsletter">Vous voulez vous inscrire à notre newsletter?</label>
+  <label for="reponse">Oui</label>
+  <input type="checkbox" name="Newsletter" id="Newsletter" />
+  <label for="reponse">Non</label>
+  <input type="checkbox" name="Newsletter" id="Newsletter" />
+</div>
+<div class="label">
+  <label for="message">Message:</label>
+  <input type="text" id="message" name="message">
+</div>
+<div class="label-button">
+    
+  <button class="label-button-bis" type="reset">Envoyer 
+  <button class="label-button-bis" type="reset">Effacer
+
+  </div>
+  </div>
+
+  
+</fieldset>
+</form>
+    </section>
+<script src="main.js"></script>    
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f0f0f0;
+}
+/* =========== INTRODUCTION ========== */
+h1 {
+    text-align: center;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* =========== NAVBAR ========== */
+ 
+
+header  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    
+           
+}
+a {
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #facc15;
+   
+}
+
+/* =========== Pour quoi apprendre HTML/CSS? ========== */
+.raisons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     gap: 2em; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    width: 60%;
+}
+.raisons-img {
+    border: solid 2px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.raisons-text h2 {
+    line-height: 1.5;
+}
+/* =========== GRID AVEC TITRE1 ET TITRE2 ========== */
+.titres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+}
+.titre1, .titre2 {
+
+    line-height: 2;
+    margin: 25px;
+}
+
+.titre1 img {
+ max-width:50%;
+  object-fit:cover;
+  border-radius:12px;
+  height: auto;
+  margin-left: 200px;
+}
+.titre2 img {
+ max-width: 50%;
+  object-fit:cover;
+  border-radius: 12px;
+  height: auto;
+  margin-left: 200px;
+}
+
+
+
+
+/* =========== ANIMATIONS ========== */
+a:hover {
+    color:#3b82f6;
+}
+button:hover {
+    color: #3b82f6;
+}
+
+.label-button-bis {
+ --color: #0044a9;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.label-button-bis::after, .label-button-bis::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.label-button-bis::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.label-button-bis:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.label-button-bis:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.label-button-bis:hover {
+ color: var(--color2);
+}
+
+.label-button-bis:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+
+/* =========== CHARTRE GRAPHIQUE ========== */
+h1, h2 {
+    font-family: "Nunito Sans";
+    text-align: center;
+    
+}
+h2 {
+    color: #facc15;
+}
+a,p,li {
+    font-family: Open Sans;
+}
+/* =========== FORMULAIRE ========== */
+.formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    margin: auto;
+    width: 10em;
+    padding: 10px;
+    
+}
+.espace {
+    margin: 20px 20px 20px 20px;
+}
+.label {
+    max-width: 90%;
+    height: 60px;
+    line-height: 1.2;
+}
+fieldset {
+    background: #e0e0e0;
+} 
+.label-button {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.label-button-bis {
+    margin: 10px
+}
+/* =========== ACCESSIBILITE ========== */
+a:focus {
+  outline: 2px solid #e0e0e0; 
+  
+}
+
+/* =========== MEDIA QUERIES ========== */
+@media screen and (max-width: 768px) {
+    .raisons {flex-direction: column;}
+    nav {display:flex;
+    justify-content: space-around;
+width: 10px;}
+    .formulaire {
+        display: flex;
+        justify-content: center;}
+    
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        
+        flex-direction: column;
+        max-width: 800px ;
+        
+    }
+    
+    
+    
+}
+
